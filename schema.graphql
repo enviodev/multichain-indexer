@@ -1,6 +1,9 @@
 type UniswapV3Factory_PoolCreated {
+  # id is the unique identifier for this event
   id: ID!
-  chainId: Int!
+  # chainId is the ID of the blockchain where this event occurred
+  chainId: Int! @index
+  # pool is the address of the newly created Uniswap V3 pool
   pool: String!
 }
 
