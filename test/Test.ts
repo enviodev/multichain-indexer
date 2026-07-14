@@ -1,8 +1,5 @@
 import assert from "assert";
-import { 
-  TestHelpers,
-  UniswapV3Factory_FeeAmountEnabled
-} from "generated";
+import { TestHelpers, UniswapV3Factory_FeeAmountEnabled } from "envio";
 const { MockDb, UniswapV3Factory } = TestHelpers;
 
 describe("UniswapV3Factory contract FeeAmountEnabled event tests", () => {
