@@ -8,7 +8,6 @@ indexer.onEvent(
   async ({ event, context }) => {
   const entity: UniswapV3Factory_PoolCreated = {
     id: `${event.chainId}_${event.block.number}_${event.logIndex}`,
-    chainId: event.chainId,
     pool: event.params.pool,
   };
 
